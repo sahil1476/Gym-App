@@ -65,7 +65,7 @@ function Home() {
     const interval = setInterval(() => {
       const randomImage = images[Math.floor(Math.random() * images.length)];
       setBgImage(randomImage);
-    }, 300000);
+    }, 10000);
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
